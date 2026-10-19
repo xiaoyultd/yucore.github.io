@@ -153,6 +153,13 @@ h3 {
   line-height: 1.7;
 }
 
+.cta-note {
+  max-width: 620px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .hero-actions,
 .button-row,
 .tool-actions,
@@ -625,6 +632,36 @@ label select {
   line-height: 1.65;
 }
 
+.step-number {
+  display: inline-flex;
+  margin-bottom: 14px;
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.soft-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.soft-cta h2 {
+  margin-bottom: 8px;
+  font-size: clamp(24px, 2.4vw, 34px);
+}
+
+.soft-cta p {
+  margin: 0;
+  color: var(--steel);
+}
+
 /* About section */
 .about-section {
   border-top: 1px solid var(--line);
@@ -891,6 +928,10 @@ details p a {
     grid-template-columns: 1fr;
   }
   .seo-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .soft-cta {
     align-items: flex-start;
     flex-direction: column;
   }

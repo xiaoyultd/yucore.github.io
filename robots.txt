@@ -1,8 +1,26 @@
 User-agent: *
 Allow: /
+Disallow: /system.html
+Disallow: /system.js
 
-User-agent: Yandex
+# AI search and answer engines may crawl the public catalog and company facts.
+User-agent: OAI-SearchBot
 Allow: /
-Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
 
 Sitemap: https://yucore.ru/sitemap.xml
+Host: yucore.ru
