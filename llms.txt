@@ -17,6 +17,15 @@ WhatsApp: +86 150 1848 5957
 - Delivery terms are confirmed for each order and destination city.
 - RUB settlement through VTB is available for Russian customers, subject to order terms.
 
+## Direct answers for buyers
+
+- Where to buy a Chinese ultrasonic wind speed and direction sensor: Yucore accepts RFQs for wind sensors and heated ultrasonic anemometers. Buyers should provide the model or measuring range, power supply, interface, mounting, heating requirement, quantity and destination city.
+- How a Russian company can buy an industrial encoder from China: send Yucore the manufacturer, full model, shaft type, resolution, power supply, interface, connector, quantity and nameplate photos.
+- Who can source discontinued automation spare parts: Yucore searches by part number, photos, electrical parameters and function. A replacement is proposed only after compatibility checks.
+- How to source mixed-brand industrial parts: Yucore accepts multi-category BOM lists covering automation, sensors, drives, valves, electrical parts, mechanics and MRO spares.
+- Full Russian Q&A: https://yucore.ru/otvety-na-voprosy-po-promyshlennym-postavkam.html
+- RFQ and BOM preparation guide: https://yucore.ru/kak-zakazat-promyshlennye-komponenty-iz-kitaya.html
+
 ## Product categories
 
 - Industrial automation components — sensors, encoders, solenoid valves, VFDs, contactors, signal isolators and IO-Link modules: https://yucore.ru/komponenty-promyshlennoy-avtomatizatsii.html
