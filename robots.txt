@@ -1,6 +1,4 @@
 # Yucore Industrial Supply — https://yucore.ru/
-# Machine-readable facts: https://yucore.ru/llms.txt
-# Extended facts: https://yucore.ru/llms-full.txt
 # Search engines and AI answer engines may crawl the public pages.
 
 User-agent: *

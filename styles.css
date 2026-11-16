@@ -812,17 +812,6 @@ details p a {
   color: var(--ink);
 }
 
-.section-title p.supplier-note {
-  max-width: 860px;
-  color: var(--steel);
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.section-title p.supplier-note a {
-  color: var(--blue);
-}
-
 @media (max-width: 980px) {
   .hero,
   .split,
