@@ -1,25 +1,116 @@
+# Yucore Industrial Supply — https://yucore.ru/
+# Machine-readable facts: https://yucore.ru/llms.txt
+# Extended facts: https://yucore.ru/llms-full.txt
+# Search engines and AI answer engines may crawl the public pages.
+
 User-agent: *
 Allow: /
 Disallow: /system.html
 Disallow: /system.js
 
-# AI search and answer engines may crawl the public catalog and company facts.
+# Search engines. Specific groups replace the * group for that agent,
+# so each group below repeats the public allow.
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: YandexAdditional
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# AI answer, citation and retrieval crawlers.
+User-agent: GPTBot
+Allow: /
+
 User-agent: OAI-SearchBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: GPTBot
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: YandexBot
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Google-CloudVertexBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: PetalBot
 Allow: /
 
 Sitemap: https://yucore.ru/sitemap.xml
