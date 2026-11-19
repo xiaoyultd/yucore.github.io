@@ -57,6 +57,70 @@
     "mainEntity": [
       {
         "@type": "Question",
+        "name": "Что лучше отправить для точного КП?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Модель, количество, фото шильдика, параметры, рабочую среду, напряжение, мощность, давление, расход или любую имеющуюся спецификацию. Если есть только фото, начните с фото."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли подобрать аналог?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Мы можем проверить аналоги по параметрам, модели, размеру, функции или условиям эксплуатации. По брендам не заявляется официальная авторизация без отдельного подтверждения."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Работаете ли вы с заказами выше 10 000 USD?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да. Для крупных списков удобнее отправить таблицу с позициями, количеством, приоритетом и городом доставки. Мы разберем список по категориям."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как быстро можно получить ответ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "По простым позициям ответ обычно быстрее. По редким промышленным деталям может потребоваться уточнение у поставщиков и проверка совместимости."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чем солнечный инвертор отличается от частотного преобразователя?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Солнечный инвертор работает с фотоэлектрической станцией. Частотный преобразователь управляет скоростью электродвигателя. Для них открыты разные страницы: солнечные инверторы и частотные преобразователи."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чем силовой трансформатор отличается от трансформатора тока?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Силовой трансформатор передает мощность и меняет напряжение. Трансформатор тока измеряет ток для учета и защиты. Для них открыты разные страницы: силовые трансформаторы и электрооборудование."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Чем система накопления отличается от шкафа автоматики?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Система накопления хранит энергию и описывается напряжением и емкостью. Шкаф автоматики — это аппаратура управления, реле и клеммы. Это разные страницы: аккумуляторы и накопители и шкафы автоматики."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Когда нужен отдельный контроллер заряда, а не только инвертор?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Контроллер заряда ведет массив на аккумулятор. Если MPPT уже встроен в гибридный инвертор, второй контроллер нужен не всегда. Комбайнер собирает строки постоянного тока и запрашивается отдельно. Страницы: контроллеры заряда и комбайнеры и солнечные инверторы."
+        }
+      },
+      {
+        "@type": "Question",
         "name": "Как запросить коммерческое предложение?",
         "acceptedAnswer": {
           "@type": "Answer",
@@ -86,14 +150,6 @@
           "@type": "Answer",
           "text": "Мы не заявляем официальную авторизацию брендов без письменного подтверждения по конкретному заказу. Поставка и подбор выполняются по модели, параметрам, фото, шильдику или техническому заданию."
         }
-      },
-      {
-        "@type": "Question",
-        "name": "Чем солнечный инвертор отличается от частотного преобразователя?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Солнечный инвертор работает с фотоэлектрической станцией. Частотный преобразователь управляет скоростью электродвигателя. Для них открыты разные страницы."
-        }
       }
     ]
   }
@@ -115,7 +171,7 @@
         "@id": "https://yucore.ru/#webpage",
         "url": "https://yucore.ru/",
         "name": "Промышленное оборудование из Китая в Россию",
-        "description": "Поставка промышленного оборудования и MRO-запчастей из Китая для российских предприятий.",
+        "description": "Насосы, датчики, ПЛК, частотники, электрика, гидравлика, солнечные инверторы, трансформаторы, накопители и MRO из Китая в Россию. КП по модели или фото.",
         "inLanguage": "ru-RU",
         "dateModified": "2026-11-19",
         "isPartOf": { "@id": "https://yucore.ru/#website" },
@@ -334,7 +390,80 @@
           <button class="tab" data-tab="electrical" type="button">Электрика</button>
           <button class="tab" data-tab="solar" type="button">Солнце</button>
         </div>
-        <div id="keywordCloud" class="keyword-cloud" aria-live="polite"></div>
+        <div id="keywordCloud" aria-live="polite">
+          <div class="keyword-cloud keyword-group" data-group="pumps">
+            <div class="keyword-chip"><strong>насос</strong><span>水泵</span></div>
+            <div class="keyword-chip"><strong>промышленные насосы</strong><span>工业泵</span></div>
+            <div class="keyword-chip"><strong>насосы из Китая</strong><span>中国水泵</span></div>
+            <div class="keyword-chip"><strong>центробежный насос</strong><span>离心泵</span></div>
+            <div class="keyword-chip"><strong>вакуумный насос</strong><span>真空泵</span></div>
+            <div class="keyword-chip"><strong>дренажный насос</strong><span>排水泵</span></div>
+            <div class="keyword-chip"><strong>скважинный насос</strong><span>井泵</span></div>
+            <div class="keyword-chip"><strong>циркуляционный насос</strong><span>循环泵</span></div>
+            <div class="keyword-chip"><strong>насосное оборудование</strong><span>泵设备</span></div>
+            <div class="keyword-chip"><strong>насосные станции</strong><span>泵站</span></div>
+            <div class="keyword-chip"><strong>запрос КП насос</strong><span>水泵询价</span></div>
+            <div class="keyword-chip"><strong>аналоги насосов</strong><span>水泵替代品</span></div>
+          </div>
+          <div class="keyword-cloud keyword-group" data-group="automation" hidden>
+            <div class="keyword-chip"><strong>автоматизация</strong><span>自动化</span></div>
+            <div class="keyword-chip"><strong>промышленная автоматизация</strong><span>工业自动化</span></div>
+            <div class="keyword-chip"><strong>ПЛК контроллер</strong><span>PLC 控制器</span></div>
+            <div class="keyword-chip"><strong>частотный преобразователь</strong><span>变频器</span></div>
+            <div class="keyword-chip"><strong>шкаф автоматики</strong><span>自动化柜</span></div>
+            <div class="keyword-chip"><strong>панель HMI</strong><span>HMI 触摸屏</span></div>
+            <div class="keyword-chip"><strong>сервопривод</strong><span>伺服驱动</span></div>
+            <div class="keyword-chip"><strong>системы автоматизации</strong><span>自动化系统</span></div>
+            <div class="keyword-chip"><strong>поставщик автоматики</strong><span>自动化供应商</span></div>
+          </div>
+          <div class="keyword-cloud keyword-group" data-group="sensors" hidden>
+            <div class="keyword-chip"><strong>датчики</strong><span>传感器</span></div>
+            <div class="keyword-chip"><strong>датчики давления</strong><span>压力传感器</span></div>
+            <div class="keyword-chip"><strong>датчики температуры</strong><span>温度传感器</span></div>
+            <div class="keyword-chip"><strong>датчики уровня</strong><span>液位传感器</span></div>
+            <div class="keyword-chip"><strong>датчики расхода</strong><span>流量传感器</span></div>
+            <div class="keyword-chip"><strong>датчики положения</strong><span>位置传感器</span></div>
+            <div class="keyword-chip"><strong>индуктивные датчики</strong><span>感应传感器</span></div>
+            <div class="keyword-chip"><strong>КИПиА</strong><span>仪表与自动化</span></div>
+            <div class="keyword-chip"><strong>измерительное оборудование</strong><span>测量设备</span></div>
+            <div class="keyword-chip"><strong>аналоги датчиков</strong><span>传感器替代品</span></div>
+          </div>
+          <div class="keyword-cloud keyword-group" data-group="hydraulics" hidden>
+            <div class="keyword-chip"><strong>гидравлика</strong><span>液压</span></div>
+            <div class="keyword-chip"><strong>гидравлическое оборудование</strong><span>液压设备</span></div>
+            <div class="keyword-chip"><strong>гидронасосы</strong><span>液压泵</span></div>
+            <div class="keyword-chip"><strong>гидромоторы</strong><span>液压马达</span></div>
+            <div class="keyword-chip"><strong>гидроцилиндры</strong><span>液压缸</span></div>
+            <div class="keyword-chip"><strong>гидрораспределители</strong><span>液压分配器</span></div>
+            <div class="keyword-chip"><strong>гидравлические клапаны</strong><span>液压阀</span></div>
+            <div class="keyword-chip"><strong>пневматика</strong><span>气动</span></div>
+            <div class="keyword-chip"><strong>запчасти для гидравлики</strong><span>液压配件</span></div>
+          </div>
+          <div class="keyword-cloud keyword-group" data-group="electrical" hidden>
+            <div class="keyword-chip"><strong>электрооборудование</strong><span>电气设备</span></div>
+            <div class="keyword-chip"><strong>электромеханическое оборудование</strong><span>机电设备</span></div>
+            <div class="keyword-chip"><strong>электродвигатели</strong><span>电动机</span></div>
+            <div class="keyword-chip"><strong>мотор-редукторы</strong><span>减速电机</span></div>
+            <div class="keyword-chip"><strong>частотные преобразователи</strong><span>变频器</span></div>
+            <div class="keyword-chip"><strong>автоматические выключатели</strong><span>自动断路器</span></div>
+            <div class="keyword-chip"><strong>контакторы</strong><span>接触器</span></div>
+            <div class="keyword-chip"><strong>кабельная продукция</strong><span>电缆产品</span></div>
+            <div class="keyword-chip"><strong>низковольтное оборудование</strong><span>低压电气</span></div>
+            <div class="keyword-chip"><strong>MRO запчасти</strong><span>工业备件</span></div>
+          </div>
+          <div class="keyword-cloud keyword-group" data-group="solar" hidden>
+            <div class="keyword-chip"><strong>солнечный инвертор</strong><span>光伏逆变器</span></div>
+            <div class="keyword-chip"><strong>сетевой инвертор</strong><span>并网逆变器</span></div>
+            <div class="keyword-chip"><strong>гибридный инвертор</strong><span>混合逆变器</span></div>
+            <div class="keyword-chip"><strong>автономный инвертор</strong><span>离网逆变器</span></div>
+            <div class="keyword-chip"><strong>силовой трансформатор</strong><span>电力变压器</span></div>
+            <div class="keyword-chip"><strong>повышающий трансформатор</strong><span>升压变压器</span></div>
+            <div class="keyword-chip"><strong>система накопления энергии</strong><span>储能系统</span></div>
+            <div class="keyword-chip"><strong>аккумулятор для СЭС</strong><span>光伏储能电池</span></div>
+            <div class="keyword-chip"><strong>контроллер заряда MPPT</strong><span>MPPT充电控制器</span></div>
+            <div class="keyword-chip"><strong>комбайнер бокс</strong><span>汇流箱</span></div>
+          </div>
+        </div>
       </div>
       <div class="keyword-section">
         <p class="eyebrow">Приоритетные тематические страницы</p>
@@ -383,7 +512,7 @@
         </details>
       </div>
       <div class="soft-cta">
-        <div><h2>Больше ответов и технических подсказок</h2><p>Отдельная страница отвечает на вопросы о ветроэнергетике, автоматике, фармацевтических и фасовочных линиях, полупроводниковом оборудовании, редукторах, компрессорах и вакуумных насосах.</p></div>
+        <div><h2>Больше ответов и технических подсказок</h2><p>Отдельная страница отвечает на вопросы о ветроэнергетике, автоматике, солнечных инверторах, трансформаторах, накопителях, фармацевтических и фасовочных линиях, полупроводниковом оборудовании, редукторах, компрессорах и вакуумных насосах.</p></div>
         <a class="btn primary" href="otvety-na-voprosy-po-promyshlennym-postavkam.html">Открыть все ответы</a>
       </div>
     </section>
@@ -470,6 +599,34 @@
         <details>
           <summary><h3>Чем солнечный инвертор отличается от частотного преобразователя?</h3></summary>
           <p>Солнечный инвертор работает с фотоэлектрической станцией. Частотный преобразователь управляет скоростью электродвигателя. Для них открыты разные страницы: <a href="solnechnye-invertory-iz-kitaya.html">солнечные инверторы</a> и <a href="chastotnye-preobrazovateli-iz-kitaya.html">частотные преобразователи</a>.</p>
+        </details>
+        <details>
+          <summary><h3>Чем силовой трансформатор отличается от трансформатора тока?</h3></summary>
+          <p>Силовой трансформатор передает мощность и меняет напряжение. Трансформатор тока измеряет ток для учета и защиты. Для них открыты разные страницы: <a href="silovye-transformatory-iz-kitaya.html">силовые трансформаторы</a> и <a href="elektrooborudovanie-iz-kitaya.html">электрооборудование</a>.</p>
+        </details>
+        <details>
+          <summary><h3>Чем система накопления отличается от шкафа автоматики?</h3></summary>
+          <p>Система накопления хранит энергию и описывается напряжением и емкостью. Шкаф автоматики — это аппаратура управления, реле и клеммы. Это разные страницы: <a href="akkumulyatory-nakopleniya-energii-iz-kitaya.html">аккумуляторы и накопители</a> и <a href="shkafy-avtomatiki-iz-kitaya.html">шкафы автоматики</a>.</p>
+        </details>
+        <details>
+          <summary><h3>Когда нужен отдельный контроллер заряда, а не только инвертор?</h3></summary>
+          <p>Контроллер заряда ведет массив на аккумулятор. Если MPPT уже встроен в гибридный инвертор, второй контроллер нужен не всегда. Комбайнер собирает строки постоянного тока и запрашивается отдельно. Страницы: <a href="kontrollery-zaryada-i-kombaynery-iz-kitaya.html">контроллеры заряда и комбайнеры</a> и <a href="solnechnye-invertory-iz-kitaya.html">солнечные инверторы</a>.</p>
+        </details>
+        <details>
+          <summary><h3>Как запросить коммерческое предложение?</h3></summary>
+          <p>Отправьте название товара, модель, количество, фото шильдика или список закупки на WhatsApp +86 15018485957 или email summer@yucore.ltd. Мы проверим варианты поставки и подготовим ответ.</p>
+        </details>
+        <details>
+          <summary><h3>Какие товары можно заказать?</h3></summary>
+          <p>Мы работаем с промышленными насосами, датчиками, КИПиА, ПЛК, частотными преобразователями, гидравликой, пневматикой, электродвигателями, электрикой, шкафами автоматики, запчастями для ветроэнергетики, солнечными инверторами, силовыми трансформаторами, аккумуляторами и системами накопления, контроллерами заряда, комбайнерами и MRO-запчастями.</p>
+        </details>
+        <details>
+          <summary><h3>Можно ли оплатить в рублях?</h3></summary>
+          <p>Для российских клиентов доступен расчет через локальный счет ВТБ в рублях. Условия оплаты согласуются по конкретному заказу.</p>
+        </details>
+        <details>
+          <summary><h3>Вы являетесь официальным дилером брендов?</h3></summary>
+          <p>Мы не заявляем официальную авторизацию брендов без письменного подтверждения по конкретному заказу. Поставка и подбор выполняются по модели, параметрам, фото, шильдику или техническому заданию.</p>
         </details>
       </div>
     </section>

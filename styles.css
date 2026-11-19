@@ -398,6 +398,10 @@ h3 {
   gap: 12px;
 }
 
+.keyword-group[hidden] {
+  display: none;
+}
+
 .keyword-chip {
   min-height: 76px;
   padding: 14px;
