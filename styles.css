@@ -1218,6 +1218,45 @@ details p a {
   }
 }
 
+.scene-section {
+  padding-top: 36px;
+  padding-bottom: 8px;
+}
+
+.scene-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.45fr);
+  gap: 18px 36px;
+  align-items: center;
+}
+
+.scene-section .section-title {
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.scene-section h2 {
+  margin-bottom: 0;
+}
+
+.scene-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #e6eef2;
+}
+
+@media (max-width: 800px) {
+  .scene-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 @media (min-width: 1181px) {
   .nav-toggle-input {
     display: none;
