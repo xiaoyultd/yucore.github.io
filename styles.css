@@ -761,9 +761,10 @@ label select {
 /* Product catalog grid */
 .product-catalog {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 22px;
   margin-bottom: 40px;
+  align-items: stretch;
 }
 
 .catalog-category {
@@ -797,6 +798,37 @@ label select {
   color: var(--steel);
   font-size: 14px;
   line-height: 1.65;
+}
+
+.catalog-category.catalog-photo-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.catalog-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #e6eef2;
+}
+
+.catalog-photo-card .catalog-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 18px 20px 20px;
+}
+
+.catalog-photo-card .catalog-links {
+  margin-top: auto;
 }
 
 .catalog-links {
@@ -1128,6 +1160,62 @@ details p a {
 
 .section .distinction a {
   color: var(--blue);
+}
+
+.seo-landing-hero:has(.seo-hero-photo) {
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 420px);
+  grid-template-areas:
+    "copy photo"
+    "copy card";
+  align-items: start;
+  column-gap: 36px;
+  row-gap: 16px;
+}
+
+.seo-landing-hero:has(.seo-hero-photo) > :not(.seo-hero-photo):not(.seo-side-card) {
+  grid-area: copy;
+  min-width: 0;
+}
+
+.seo-hero-photo {
+  grid-area: photo;
+  align-self: start;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 12px;
+  background: #e6eef2;
+  box-shadow: 0 18px 40px rgba(8, 24, 36, 0.22);
+}
+
+.seo-landing-hero:has(.seo-hero-photo) > .seo-side-card {
+  grid-area: card;
+  align-self: start;
+  min-width: 0;
+}
+
+@media (max-width: 900px) {
+  .seo-landing-hero:has(.seo-hero-photo) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "photo"
+      "copy"
+      "card";
+    row-gap: 22px;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .seo-landing-hero h1 {
+    font-size: clamp(28px, 7.8vw, 40px);
+    overflow-wrap: break-word;
+  }
 }
 
 @media (min-width: 1181px) {
