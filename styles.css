@@ -801,6 +801,79 @@ label {
   margin-top: 48px;
 }
 
+.section > #solar:first-child {
+  margin-top: 0;
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.application-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  color: inherit;
+  text-decoration: none;
+}
+
+.application-lead {
+  background: #fff;
+  border-color: #c5d4de;
+  box-shadow: 0 12px 28px rgba(16, 36, 48, 0.08);
+}
+
+.application-card img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #e6eef2;
+}
+
+.application-caption {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px 15px;
+  color: var(--petrol);
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+.application-lead .application-caption {
+  font-size: 17px;
+}
+
+.application-caption::after {
+  content: "→";
+  flex: 0 0 auto;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.application-card:hover {
+  border-color: var(--green);
+}
+
+.application-card:hover .application-caption {
+  color: var(--green-deep);
+}
+
 .keyword-section {
   margin-top: 42px;
 }
@@ -1263,6 +1336,29 @@ details p a {
   box-shadow: var(--shadow);
 }
 
+@media (min-width: 980px) {
+  .application-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+
+  .application-grid .application-lead:nth-child(1) {
+    grid-column: 1 / span 3;
+  }
+
+  .application-grid .application-lead:nth-child(2) {
+    grid-column: 4 / span 3;
+  }
+
+  .application-grid .application-card:nth-child(3) {
+    grid-column: 2 / span 2;
+  }
+
+  .application-grid .application-card:nth-child(4) {
+    grid-column: 4 / span 2;
+  }
+}
+
 @media (min-width: 701px) {
   .catalog-photo-card h3 {
     min-height: 2.6em;
@@ -1339,9 +1435,19 @@ details p a {
   }
 }
 
+@media (max-width: 979px) {
+  .application-grid .application-lead {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 640px) {
   :root {
     --header-offset: 124px;
+  }
+
+  .application-grid .application-lead {
+    grid-column: auto;
   }
 
   h1,
@@ -1354,6 +1460,7 @@ details p a {
   .fact-grid,
   .footer-grid,
   .product-catalog,
+  .application-grid,
   .trust-bar {
     grid-template-columns: 1fr;
   }
